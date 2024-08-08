@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <title>Quiz Website</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+</head>
+<body>
+    <main class="main">
+        <header class="header">
+             <a href="#" class="logo">Empire Quiz.</a>
+               <nav class="navbar" id="sidemenu">
+                <a href="#" calss="yo">Home</a>
+                <a href="about.html" calss="yo">About</a>
+                <a href="#" calss="yo">Services</a>
+                <a href="#" calss="yo">Contact</a>
+<i class="fas fa-times" onclick="closemenu()"></i>
+<i class="fas fa-bars" onclick="openmenu()"></i>
+
+               </nav>
+        </header>
+        <section class="home">
+             <div class="home-content">
+                <h1>Quiz Website</h1>
+                <p>Click the button below to choose the topic of quiz</p><br>
+                <button class="choose-btn" onclick="location.href='topic.html'">Topics</button>
+             </div>
+        </section>
+        </main>
+        <script src="science.js"></script>
+        <script src="script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu(){
+sidemenu.style.right = "0";
+}
+
+function closemenu(){
+sidemenu.style.right = "-200";
+}
+
+</script>
+
+
+</body>
+</html>
